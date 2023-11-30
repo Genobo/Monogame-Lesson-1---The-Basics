@@ -8,7 +8,7 @@ namespace Monogame_Lesson_1___The_Basics
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-        Texture2D spaceTexture, shipTexture, tieTexture;
+        Texture2D spaceTexture, shipTexture, tieTexture, rockTexture, planetTexture;
 
         public Game1()
         {
@@ -36,6 +36,8 @@ namespace Monogame_Lesson_1___The_Basics
             spaceTexture = Content.Load<Texture2D>("space");
             shipTexture = Content.Load<Texture2D>("ship1");
             tieTexture = Content.Load<Texture2D>("tieship");
+            rockTexture = Content.Load<Texture2D>("asteroid1");
+            planetTexture = Content.Load<Texture2D>("planet1");
         }
 
         protected override void Update(GameTime gameTime)
@@ -57,6 +59,8 @@ namespace Monogame_Lesson_1___The_Basics
             _spriteBatch.Draw(spaceTexture, new Vector2(0, 0), Color.White);
             _spriteBatch.Draw(shipTexture, new Vector2(325, 45), Color.White);
             _spriteBatch.Draw(tieTexture, new Vector2(75, 165), Color.White);
+            _spriteBatch.Draw(rockTexture, new Vector2(450, 165), Color.White);
+            _spriteBatch.Draw(planetTexture, new Vector2(-55, -195), Color.White);
             _spriteBatch.End();
             base.Draw(gameTime);
         }
