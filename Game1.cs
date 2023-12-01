@@ -34,7 +34,7 @@ namespace Monogame_Lesson_1___The_Basics
 
             // TODO: use this.Content to load your game content here
             spaceTexture = Content.Load<Texture2D>("space");
-            shipTexture = Content.Load<Texture2D>("ship1");
+            shipTexture = Content.Load<Texture2D>("ship2");
             tieTexture = Content.Load<Texture2D>("tieship");
             rockTexture = Content.Load<Texture2D>("asteroid1");
             planetTexture = Content.Load<Texture2D>("planet1");
@@ -58,7 +58,7 @@ namespace Monogame_Lesson_1___The_Basics
             _spriteBatch.Begin();
             _spriteBatch.Draw(spaceTexture, new Vector2(0, 0), Color.White);
             _spriteBatch.Draw(shipTexture, new Vector2(325, 45), Color.White);
-            _spriteBatch.Draw(tieTexture, new Vector2(75, 165), Color.White);
+            _spriteBatch.Draw(tieTexture, new Vector2(95, 165), Color.White);
             _spriteBatch.Draw(rockTexture, new Vector2(450, 165), Color.White);
             _spriteBatch.Draw(planetTexture, new Vector2(-55, -195), Color.White);
             _spriteBatch.End();
